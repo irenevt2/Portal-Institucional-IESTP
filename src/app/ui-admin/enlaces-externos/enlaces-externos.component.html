@@ -1,0 +1,7 @@
+<carousel class="carousel" style="height:150px;" [autoplay]="true" [cellWidth]="220">
+    <div class="carousel-cell enlace" *ngFor="let enlace of enlaces" >
+        <a href="{{enlace.link}}" target="_blank">
+            <img src="{{enlace.imgUrl}}">
+        </a>
+    </div>
+</carousel>

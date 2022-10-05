@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+* {
+    box-sizing: border-box;
+}
+:root{
+    --green: #006a1c;
+    --green-ligth: #009828;
+    --green-dark: #15361b;
+    --yellow: rgb(251, 230, 0);
+    --blue: #00a6ff;
+    --blue-dark: #083f7c;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

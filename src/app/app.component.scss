@@ -1,0 +1,124 @@
+
+header{
+    background: var(--green-ligth); 
+}
+.header {
+    color: white;
+    // text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    letter-spacing: 1px;
+    
+    ._title{
+        font-size: 25px;
+    }
+    ._nombre{
+        font-weight: bold;
+    }
+}
+
+.navbar {
+    background: var(--green);
+    text-transform: uppercase;
+    .nav-item{
+        &:hover{
+            .sub-menu{
+                display: block;
+            }
+        }
+    }
+}
+.navbar-expand-lg .navbar-collapse {
+    justify-content: space-around;
+}
+
+.nav-item{
+    .nav-link{
+        border-radius: 5px;
+        &:hover{    
+            background: var(--green-dark);
+        }
+    }
+    &.active{
+        &>.nav-link{
+            background: var(--yellow);
+            color: black;
+            font-weight: bold;
+        }
+    }
+}
+.sub-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    background: #093f7c;
+    position: absolute;
+    top: 48px;
+    border-radius: 5px;
+    .nav-link:hover{
+        background: #003169;
+    }
+    // flex-wrap: wrap;
+}
+footer{
+    background: var(--blue-dark);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    .box{
+        padding: 0 15px;
+        &.rigth{
+            border-right: 1px solid rgb(0, 11, 50) ;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        padding: 5px 30px;
+        
+    }
+    .redes{
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        a{
+            color: red;
+            background: white;
+            padding: 15px;
+            border-radius: 50%;
+            line-height: 1;
+            font-size: 28px;
+            &.facebook{
+                color: #017bfe;
+            }
+            &.twitter{
+                color: #00a9f4;
+            }
+            &.youtube{
+                color: #ff0200;
+            }
+        }
+        a:hover {
+            color: white;
+            &.facebook{
+                background:#017bfe;
+            }
+            &.twitter{
+                background:#00a9f4;
+            }
+            &.youtube{
+                background:#ff0200;
+            }
+        }
+
+    }
+    .celular{
+        line-height: 2;
+        font-size: 18px;
+    }
+}

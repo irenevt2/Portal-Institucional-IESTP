@@ -1,0 +1,58 @@
+<!-- <pre>
+    {{paciente | json}}
+</pre> -->
+<div class="container">
+<form [formGroup]="editarForm" (ngSubmit)="guardar(editarForm.value)">
+  <div class="form-group">
+      <label class="form-label" for="nombre">Nombre</label>
+      <input class="form-control" type="text" id="nombre" formControlName="nombre">
+
+      <label class="form-label" for="direccion">Direccion</label>
+      <input class="form-control" type="text" id="direccion" formControlName="direccion">
+  </div>
+  <div class="form-group row">
+    <div class="col">
+      <label class="form-label" for="dni">DNI</label>
+      <input class="form-control" type="number" id="dni" formControlName="dni">
+    </div>
+    <div class="col">
+      <label class="form-label" for="codigoPostal">Codigo Postal</label>
+      <input class="form-control" type="number" id="codigoPostal" formControlName="codigoPostal">
+    </div>
+    <div class="col">
+      <label class="form-label" for="telefono">Telefono</label>
+      <input class="form-control" type="text" id="telefono" formControlName="telefono">
+    </div>
+  </div>
+    <div class="form-group row">
+      <div class="col">
+        <label class="form-label" for="fechaNacimiento">Fecha de Nacimiento</label>
+        <input class="form-control" type="text" id="fechaNacimiento" formControlName="fechaNacimiento">
+      </div>
+      <div class="col">
+        <label class="form-label" for="correo">Correo</label>
+        <input class="form-control" type="email" id="correo" formControlName="correo">
+      </div>
+      <div class="col">
+        <label class="form-label" for="genero">Genero</label>
+        <input class="form-control" type="text" id="genero" formControlName="genero">
+      </div>
+    </div>
+    <br>
+    <br>
+
+  <button type="submit" class="btn btn-primary">
+      Guardar
+  </button>
+  <button type="button" class="btn btn-danger" (click)="eliminar()">
+      Eliminar
+  </button>
+  <button type="button" class="btn btn-dark" (click)="salir()">
+      Salir
+  </button>
+  <!-- <button type="button" class="btn btn-primary" (click)="guardar()">
+      Guardar
+  </button> -->
+</form>
+</div>
+

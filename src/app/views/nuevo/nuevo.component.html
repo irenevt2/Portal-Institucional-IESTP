@@ -1,0 +1,48 @@
+<div class="container">
+    <form [formGroup]="nuevoForm" (ngSubmit)="guardar(nuevoForm.value)">
+        <div class="form-group">
+            <label class="form-label" for="nombre">Nombre</label>
+            <input class="form-control" type="text" id="nombre" formControlName="nombre" placeholder="Nombre del Paciente">
+      
+            <label class="form-label" for="direccion">Direccion</label>
+            <input class="form-control" type="text" id="direccion" formControlName="direccion" placeholder="Direccion">
+        </div>
+        <div class="form-group row">
+          <div class="col">
+            <label class="form-label" for="dni">DNI</label>
+            <input class="form-control" type="number" id="dni" formControlName="dni" placeholder="DNI">
+          </div>
+          <div class="col">
+            <label class="form-label" for="codigoPostal">Codigo Postal</label>
+            <input class="form-control" type="number" id="codigoPostal" formControlName="codigoPostal" placeholder="Codigo Postal">
+          </div>
+          <div class="col">
+            <label class="form-label" for="telefono">Telefono</label>
+            <input class="form-control" type="text" id="telefono" formControlName="telefono" placeholder="Teléfono">
+          </div>
+        </div>
+          <div class="form-group row">
+            <div class="col">
+              <label class="form-label" for="fechaNacimiento">Fecha de Nacimiento</label>
+              <input class="form-control" type="text" id="fechaNacimiento" formControlName="fechaNacimiento" placeholder="Fecha de Nacimiento">
+            </div>
+            <div class="col">
+              <label class="form-label" for="correo">Correo</label>
+              <input class="form-control" type="email" id="correo" formControlName="correo" placeholder="Correo">
+            </div>
+            <div class="col">
+              <label class="form-label" for="genero">Genero</label>
+              <input class="form-control" type="text" id="genero" formControlName="genero" placeholder="Nombre del Paciente">
+            </div>
+          </div>
+          <br>
+          <br>
+      
+        <button type="submit" class="btn btn-primary">
+            Guardar
+        </button>
+        <button type="button" class="btn btn-dark" (click)="salir()">
+            Salir
+        </button>
+      </form>
+</div>

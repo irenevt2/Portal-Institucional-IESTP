@@ -1,0 +1,40 @@
+<p>dashboard works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <button class="btn btn-primary" type="button" (click)="nuevoPaciente()">Nuevo Paciente</button>
+            <!-- <button class="btn btn-primary" type="button" (click)="getData()" >Ver Paciente</button> -->
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">DNI</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Correo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let paciente of pacientes" (click)="editarPaciente(paciente.PacienteId)">
+                        <td>{{paciente.PacienteId}}</td>
+                        <td>{{paciente.Nombre}}</td>
+                        <td>{{paciente.DNI}}</td>
+                        <td>{{paciente.Telefono}}</td>
+                        <td>{{paciente.Correo}}</td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+<div class="opciones">
+    <!-- <div class="opcion nuevo"><i class="icon ion-md-add"></i></div>
+    <div class="opcion editar"><i class="icon ion-md-create"></i></div>
+    <div class="opcion eliminar"><i class="icon ion-md-trash"></i></div> -->
+    <!-- <button (click)="nuevoPaciente()" type="button" class="opcion btn btn-primary"><i class="icon ion-md-add"></i></button> -->
+    <!-- PACIENTE NO EXISTE EN TS-->
+    <!-- <button  type="button" class="opcion btn btn-success"><i class="icon ion-md-create"></i></button> -->
+    <!-- <button (click)="eliminarPaciente()" type="button" class="opcion btn btn-danger"><i class="icon ion-md-trash"></i></button> -->
+
+
+</div>

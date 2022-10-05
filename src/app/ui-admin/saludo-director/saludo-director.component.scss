@@ -1,0 +1,26 @@
+.box{
+    background: var(--green-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    
+    .foto{
+        border-radius: 50%;
+        overflow: hidden;
+        min-width: 80%;
+        width: 250px;
+        height: 250px;
+    }
+    .nombre{
+        color: white;
+        margin: 10px;
+    }
+    .cargo{
+        color: #e8dd0e;
+        font-weight: bold;
+    }
+}
